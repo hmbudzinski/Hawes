@@ -1,17 +1,24 @@
 import React from "react";
-import { BrowserRouter as Router } from "react-router-dom";
-import Nav from "../src/components/Nav";
-// import SignIn from "./pages/SignIn";
-// import SignUp from "./pages/SignUp";
-// import Home from "./pages/Home";
-// import Activities from "./pages/Activities";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import Scenic from "./pages/Scenic";
+import Work from "./pages/Work";
 
 function App () {
 
     return (
         <Router>
-            <div> 
-              <Nav />
+              <div> 
+                <Switch>
+                    <Route exact path={["/","/Home"]} component={Home} />
+                   
+                    <Route exact path="/Contact" component={Contact} />
+                     
+                    <Route exact path="/Scenic" component={Scenic} />
+                     
+                    <Route exact path="/Work" component={Work} />
+                </Switch>
             </div>
         </Router>
     )

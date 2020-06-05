@@ -7,6 +7,7 @@ function Home() {
     return (
         <div id="homeID">
             <Nav />
+            Home
             <Footer />    
         </div>
     )

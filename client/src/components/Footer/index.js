@@ -5,9 +5,7 @@ import "./style.css"
 function Footer() {
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" fixed="bottom" id="footer" className="fluid"> 
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-                <Navbar.Collapse id="responsive-navbar-nav">
+            <Navbar expand="lg" fixed="bottom" id="footer" className="fluid"> 
                     <Col>
                         <Nav className="mr-auto name">  
                             <h6>Hayley Budzinski</h6>         
@@ -19,8 +17,6 @@ function Footer() {
                             </Nav.Link>
                         </Row>
                     </Col>
-
-                </Navbar.Collapse>
             </Navbar> 
         </div>
 

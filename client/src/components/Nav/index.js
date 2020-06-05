@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./style.css"
 
-function Nav() {
+function Nav({ page }) {
 
     return (
 
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light" id="mainNav">
           <div>
             <Link className="navbar-brand" to="/home">
               Dan Hawes
@@ -17,34 +18,12 @@ function Nav() {
           </button>
     
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <div>
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <Link
-                //   to="/home"
-                //   className={
-                //     (window.location.pathname === "/home")
-                //       ? "nav-link active"
-                //       : "nav-link"
-                //   }
-                >
-                  Home
-                  </Link>
-              </li>
-            </ul>
-          </div>
     
           <div>
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link 
-                // className={(page === "Cooking") ? "nav-link active" : "nav-link"}
-                //   to={{
-                //     pathname: "/activities",
-                //     state: {
-                //       category: 'Cooking'
-                //     }
-                //   }}
+                <Link to="/Scenic"
+                className={(page === "Scenic") ? "nav-link active" : "nav-link"}
                 >The Scenic Route</Link>
               </li>
             </ul>
@@ -53,14 +32,8 @@ function Nav() {
           <div>
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link 
-                // className={(page === "Fitness") ? "nav-link active" : "nav-link"}
-                //   to={{
-                //     pathname: '/activities',
-                //     state: {
-                //       category: 'Fitness'
-                //     }
-                //   }}
+                <Link to="/Contact"
+                className={(page === "Contact") ? "nav-link active" : "nav-link"}
                   >
                       Contact</Link>
               </li>
@@ -70,14 +43,8 @@ function Nav() {
           <div>
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link 
-                // className={(page === "Random") ? "nav-link active" : "nav-link"}
-                //   to={{
-                //     pathname: '/activities',
-                //     state: {
-                //       category: 'Random'
-                //     }
-                //   }}
+                <Link to="/Work"
+                className={(page === "Work") ? "nav-link active" : "nav-link"}
                   >Just the F@#%ING Work</Link>
               </li>
             </ul>
