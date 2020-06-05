@@ -9,15 +9,17 @@ function Home() {
         <div id="homeID">
             <MainNav />
             <Container id="contactDiv">
-                <h1>Dan Hawes - Copywriter</h1>
-                <hr></hr>
-                <h4>Contact</h4>
+                <h2>Dan Hawes - Copywriter</h2>
                 <h6><a href="mailto:Dhawes8989@gmail.com" id="email">Dhawes8989@gmail.com</a></h6>
                 <h6>(719) 649-2535</h6>
 
                 <h4>Experience</h4>
                 <h6>Copywriter at TDA_Boulder: 2017-Current</h6>
                 <h6>A bunch of other random jobs </h6>
+
+                <h4>Bio</h4>
+                <h6>Placeholder</h6>
+                <h6>Placeholder</h6>
 
                 <h4>Education</h4>
                 <h6>Portfolio Studio at San Diego</h6>
@@ -33,8 +35,9 @@ function Home() {
                 <h6>Denver One Show - Bronze</h6>
                 <h6>Denver One Show - Bronze</h6>
                 <h6>Denver One Show - Silver</h6>
-                <h6>Denver One Show - Silver</h6>
+                <h6 id="bottom">Denver One Show - Silver</h6>
 
+                <hr></hr>
             </Container>
             <Footer />    
         </div>

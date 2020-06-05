@@ -7,20 +7,24 @@ function MainNav({ page }) {
 
     return (
 
-        <Navbar id="mainNav" expand="lg" sticky="top">
-                <Navbar.Brand href="/home">Dan Hawes</Navbar.Brand>
-
+        <Navbar id="mainNav" expand="lg">
+            <Container>
+                <Navbar.Brand href="/home">Dan Hawes Portfolio</Navbar.Brand>
+            </Container>
                 <Navbar.Toggle />
+
+            <Container>
                     <Navbar.Collapse className="justify-content-end">
-                        <div>
+                    <div>
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <Link to="/Scenic"
-                                className={(page === "Scenic") ? "nav-link active" : "nav-link"}
-                                >The Scenic Route</Link>
+                                <Link to="/Work"
+                                className={(page === "Work") ? "nav-link active" : "nav-link"}
+                                >My Work</Link>
                             </li>
                         </ul>
                     </div>
+                    
                     <div>
                         <ul className="navbar-nav">
                             <li className="nav-item">
@@ -30,16 +34,10 @@ function MainNav({ page }) {
                             </li>
                         </ul>
                     </div>
-                    <div>
-                        <ul className="navbar-nav">
-                            <li className="nav-item">
-                                <Link to="/Work"
-                                className={(page === "Work") ? "nav-link active" : "nav-link"}
-                                >Just the F@#%ING Work</Link>
-                            </li>
-                        </ul>
-                    </div>
+
                 </Navbar.Collapse>
+            </Container>
+
         </Navbar>
 
 

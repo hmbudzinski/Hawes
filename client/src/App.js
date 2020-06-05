@@ -2,7 +2,6 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
-import Scenic from "./pages/Scenic";
 import Work from "./pages/Work";
 
 function App () {
@@ -14,8 +13,6 @@ function App () {
                     <Route exact path={["/","/Home"]} component={Home} />
                    
                     <Route exact path="/Contact" component={Contact} />
-                     
-                    <Route exact path="/Scenic" component={Scenic} />
                      
                     <Route exact path="/Work" component={Work} />
                 </Switch>
