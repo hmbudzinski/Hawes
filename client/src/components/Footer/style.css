@@ -1,0 +1,47 @@
+#footer {
+    margin: auto 0;
+    width: 100%;
+    background-color: white;
+    display: inline-block;
+    justify-content: space-between;
+    text-align: center;
+    /* border-top: 1px solid #777777 */
+    position: sticky;
+}
+
+.name {
+    justify-content: space-evenly;
+}
+
+.gitIcon {
+    margin-right: 100px;
+    padding-right: 100px;
+}
+
+.footer-copyright {
+    width: 100%;
+    text-align: center;
+    font-size: smaller;
+    margin-top: -50px;
+}
+
+.linkedin {
+    color: darkgray;
+}
+
+.linkedin:hover {
+    color: darkslategray;
+}
+
+.github {
+    color: darkgray;
+}
+
+.github:hover {
+    color: darkslategray;
+}
+
+.icon-row {
+    margin-top: -10px;
+    justify-content: center;
+}
