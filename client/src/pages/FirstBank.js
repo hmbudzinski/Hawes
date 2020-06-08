@@ -6,7 +6,7 @@ import TreeImage from "../styles/tree.jpg"
 import { Card, CardGroup } from "react-bootstrap";
 
 
-function Work() {
+function FirstBank() {
 
     function cardHover(event){
         // const [isHover, setIsHover] = useState(false);
@@ -58,4 +58,4 @@ function Work() {
     )
 }
 
-export default Work;
+export default FirstBank;

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Container } from "react-bootstrap";
-import "./style.css"
+import "../../styles/main.css"
 
 function MainNav({ page }) {
 
@@ -15,6 +15,17 @@ function MainNav({ page }) {
 
             <Container>
                     <Navbar.Collapse className="justify-content-end">
+                    <div>
+                        <ul className="navbar-nav">
+                            <li className="nav-item">
+                                <Link to="/Home"
+                                className={(page === "Home") ? "nav-link active" : "nav-link"}
+                                >Home</Link>
+                            </li>
+                        </ul>
+                    </div>
+
+            
                     <div>
                         <ul className="navbar-nav">
                             <li className="nav-item">
