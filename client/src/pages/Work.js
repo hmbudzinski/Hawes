@@ -3,45 +3,48 @@ import MainNav from "../components/Nav";
 import Footer from "../components/Footer"
 import "../styles/main.css"
 import TreeImage from "../styles/tree.jpg"
-// import NerdImage from "../../styles/two.PNG"
-// import WeatherImage from "../../styles/three.PNG"
-// import BudgetImage from "../../styles/four.PNG"
+import { Card, CardGroup } from "react-bootstrap";
 
 
 function Home() {
     return (
         <div id="homeID">
-            <MainNav />
-        <hr id="breakline"></hr>
-        <div className="jumbotron">
-        <div className="row" id="workcontainer">
-        <div className="card shadow-drop-2-center">
-            <img src={TreeImage} className="card-img-top workimages" alt="quarantivities"></img>
-            <div className="card-body">
-                <h5 className="card-title">Quarantivities</h5>
-            </div>
-        </div>
-        <div className="card shadow-drop-2-center">
-            <img src={TreeImage} className="card-img-top workimages" alt="Weather"></img>
-            <div className="card-body">
-                <h5 className="card-title">Weather Dashboard</h5>
-            </div>
-        </div>
+        <MainNav />
+        <CardGroup>
+            <Card>
+                <Card.Img variant="top" src={TreeImage} />
+                <Card.Body>
+                <Card.Title>Card title</Card.Title>
+                <Card.Text>
+                    This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.
+                </Card.Text>
+                </Card.Body>
+            </Card>
 
-        <div className="card shadow-drop-2-center">
-            <img src={TreeImage} className="card-img-top workimages" alt="Budget"></img>
-            <div className="card-body">
-                <h5 className="card-title">Budget-Tracker</h5>
-            </div>
-        </div>
-        <div className="card shadow-drop-2-center">
-            <img src={TreeImage} className="card-img-top workimages" alt="Nerdify"></img>
-            <div className="card-body">
-                <h5 className="card-title">Nerdify</h5>
-            </div>
-        </div>
-        </div>
-        </div>
+            <Card>
+                <Card.Img variant="top" src={TreeImage} />
+                <Card.Body>
+                <Card.Title>Card title</Card.Title>
+                <Card.Text>
+                    This card has supporting text below as a natural lead-in to additional
+                    content.{' '}
+                </Card.Text>
+                </Card.Body>
+            </Card>
+
+            <Card>
+                <Card.Img variant="top" src={TreeImage} />
+                <Card.Body>
+                <Card.Title>Card title</Card.Title>
+                <Card.Text>
+                    This is a wider card with supporting text below as a natural lead-in to
+                    additional content. This card has even longer content than the first to
+                    show that equal height action.
+                </Card.Text>
+                </Card.Body>
+            </Card>
+            </CardGroup>
 
             <Footer />    
         </div>
