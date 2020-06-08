@@ -10,7 +10,7 @@ function Home() {
     return (
         <div id="homeID">
         <MainNav />
-        <CardGroup>
+        <CardGroup className="CardGroup">
             <Card>
                 <Card.Img variant="top" src={TreeImage} />
                 <Card.Body>
