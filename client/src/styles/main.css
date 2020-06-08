@@ -20,5 +20,14 @@ h1{
 }
 
 #bottom{
-padding-bottom: 30px;
+    padding-bottom: 30px;
+}
+
+.workimages{
+    width: 200px;
+    height: 200px;
+}
+
+.jumbotron{
+    background-color: white;
 }
